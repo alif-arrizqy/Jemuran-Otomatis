@@ -37,6 +37,8 @@ void setup() {
   
   // Konfigurasi pin sensor hujan
   pinMode(PIN_SENSOR_POWER, OUTPUT);
+  // Tambahan kode ini
+  pinMode(PIN_SENSOR_INPUT, INPUT);  // PENTING: Set pin input sensor
   digitalWrite(PIN_SENSOR_POWER, LOW);  // Matikan sensor di awal
   
   Serial.println("Sistem siap beroperasi...");
