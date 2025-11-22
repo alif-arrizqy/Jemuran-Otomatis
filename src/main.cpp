@@ -54,8 +54,8 @@ int bacaSensorHujan() {
   // Nyalakan sensor
   digitalWrite(PIN_SENSOR_POWER, HIGH);
   
-  // Delay pengecekan sensor 2 detik
-  delay(2000);
+  // Delay pengecekan sensor 1 detik
+  delay(1000);
   
   // Baca nilai sensor
   int nilaiSensor = digitalRead(PIN_SENSOR_INPUT);
@@ -113,5 +113,5 @@ void loop() {
   Serial.println("---");
   
   // Ulangi proses setiap 5 detik
-  delay(5000);
+  delay(2000);
 }
